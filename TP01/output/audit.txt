@@ -1,0 +1,29 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Tue Feb 14 10:03:38 2023
+Invocation: foremost USB_Image 
+Output directory: /home/lesli/Documents/USB_Evidence/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: USB_Image
+Start: Tue Feb 14 10:03:38 2023
+Length: 3 GB (3931111424 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00016416.jpg 	      49 KB 	    8404992 	 
+1:	00016568.jpg 	       2 MB 	    8482816 	 
+2:	00021198.jpg 	     201 KB 	   10853615 	 
+3:	00016520.png 	      23 KB 	    8458240 	  (1738 x 1050)
+4:	00021608.png 	       9 MB 	   11063296 	  (1170 x 2532)
+5:	00040392.png 	      23 KB 	   20680704 	  (1738 x 1050)
+Finish: Tue Feb 14 10:06:07 2023
+
+6 FILES EXTRACTED
+	
+jpg:= 3
+png:= 3
+------------------------------------------------------------------
+
+Foremost finished at Tue Feb 14 10:06:07 2023
