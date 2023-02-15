@@ -1,8 +1,9 @@
 INTRODUCTION
+
 Le site bosch-cyber a été compromis, et que l'attaquant aurait exfiltré des outils secrets très dangereux. Heureusement l'administration a mis le site sous maintenance. nous devons éffectuer une analyse forensique afin de découvrir ce que l'attaquant a exfiltré. 
 
 METHODOLOGIE
-Pour faire une analyse forensique des données qui ont été exfiltrées sur le site bosch-cyber, nous allons tout d'abord faire une description des méthodes que nous allons utiliser pour analyser les données et comment nous allons nous en servir.
+Pour faire une analyse forensique des données qui ont été exfiltrées sur le site bosch-cyber, nous allons tout d'abord faire une description des méthodes que nous allons utiliser pour analyser les données et comment nous allons nous en servir. à savoir photorec 
 
 Après s'être connecté sur le serveur qui a été attaqué par le hacker, nous avons saisi la commande bash history et nous avons pu constater que l'attaquant a éffectué les actions suivantes:
 
@@ -41,7 +42,7 @@ Voici la liste des commandes effectuées par l'attaquant :
     rm -rf /home/b0sch/bosch_cyber_tools : Cette commande supprime de manière récursive le répertoire /home/b0sch/bosch_cyber_tools et son contenu, ce qui peut entraîner la suppression de données ou d'outils importants.
  
    Après avoir collecter toutes ces informations, nous avons procédé au tri afin de se concenter sur les données plus critiques. 
-   nous avons donc accentuer nos analyses sur le fichier bosch_cyber_tools.zip afin de découvrir ce que l'attaquant a exfiltré. 
+   nous avons donc accentuer nos analyses sur le fichier bosch_cyber_tools.zip afin de découvrir ce que l'attaquant a exfiltré.on a vérifié léextension du fichier par la commande filen nous avons receuilli les informations sur la taille du fichier, ses dates
    On a commencé par récupèrer le zip chiffré en local : docker cp 2676834c4aa6:/opt/leak/bosch_cyber_tools.zip /home/kali/Documents
   
    On installe zip2john et john the ripper :
