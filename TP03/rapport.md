@@ -100,3 +100,4 @@ Le fichier /etc/hosts est un fichier système qui contient des correspondances e
   - Documenter les évènements
   - avoir un double stockage pour la redondance des données
   - chiffrer les copies si ce sont des disques dur externes
+  - prioriser l'utilisation du système de fichier NTFS car il est plus sécurisé et a un meilleur espace de stockage  
