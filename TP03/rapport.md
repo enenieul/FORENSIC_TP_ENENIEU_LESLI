@@ -44,6 +44,8 @@ Session completed.
  le mot de passe trouvé ne semble pas fonctionner : unzip -P '!LUVDKR!..*7¡Vamos!' bosch_cyber_tools.zip
  incorrect password
  
+ En essayant une autre approche, utiliser l'utilitaire testdisk pour essayer de retrouver le fichier /tmp/mypassword supprimé, il n'a pas été possible de pouvoir le récupérer.
+ 
 
   
   
