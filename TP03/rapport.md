@@ -6,7 +6,7 @@ METHODOLOGIE
 
 Pour faire une analyse forensique des données qui ont été exfiltrées sur le site bosch-cyber, nous allons tout d'abord faire une description des méthodes que nous allons utiliser pour analyser les données et comment nous allons nous en servir. à savoir photorec 
 
-ANANLYSE
+RESULTATS
 
 Après s'être connecté sur le serveur qui a été attaqué par le hacker, nous avons saisi la commande bash history et nous avons pu constater que l'attaquant a éffectué les actions suivantes:
 
@@ -43,9 +43,12 @@ Voici la liste des commandes effectuées par l'attaquant :
     cd .. : Cette commande change le répertoire de travail courant au répertoire parent.
     
     rm -rf /home/b0sch/bosch_cyber_tools : Cette commande supprime de manière récursive le répertoire /home/b0sch/bosch_cyber_tools et son contenu, ce qui peut entraîner la suppression de données ou d'outils importants.
+    
  
-   Après avoir collecter toutes ces informations, nous avons procédé au tri afin de se concenter sur les données plus critiques. 
-   nous avons donc accentuer nos analyses sur le fichier bosch_cyber_tools.zip afin de découvrir ce que l'attaquant a exfiltré.on a vérifié léextension du fichier par la commande filen nous avons receuilli les informations sur la taille du fichier, ses dates
+
+ 
+ Après avoir collecter toutes ces informations, nous avons procédé au tri afin de se concenter sur les données plus critiques. 
+   nous avons donc accentuer nos analyses sur le fichier bosch_cyber_tools.zip afin de découvrir ce que l'attaquant a exfiltré.on a vérifié lES Extensions du fichier par la commande filen nous avons receuilli les informations sur la taille du fichier, ses dates
    On a commencé par récupèrer le zip chiffré en local : docker cp 2676834c4aa6:/opt/leak/bosch_cyber_tools.zip /home/kali/Documents
   
    On installe zip2john et john the ripper :
@@ -72,6 +75,10 @@ Session completed.
  incorrect password
  
  En essayant une autre approche, utiliser l'utilitaire testdisk pour essayer de retrouver le fichier /tmp/mypassword supprimé, il n'a pas été possible de pouvoir le récupérer.
+ 
+ CONCLUSION 
+ 
+Au terme de ces analyses on peut constater que l'attaquant s'est introduit dans le réseau, s'est déplacé, a éffectué des actions malveillantes et a corompu le sytème. il est donc à noter qu'un tel incident ne serait jamais arrivé si la sécurité du système avait été plus accrue. c'est pourquoi nous procedons à des recommandations à suivre  pour éviter à l'avenir une telle situation.
  
  Recommandations
  
@@ -119,3 +126,6 @@ Le fichier /etc/hosts est un fichier système qui contient des correspondances e
   - avoir un double stockage pour la redondance des données
   - chiffrer les copies si ce sont des disques dur externes
   - prioriser l'utilisation du système de fichier NTFS car il est plus sécurisé et a un meilleur espace de stockage  
+  
+  
+  En somme il est important de noter qu'une telle analyse est nécessaire pour tout système ayant été corrompu car permet de trouver des preuves irréfutables et de mieux gérer la sécurité des systèmes d'informations à l'avenir
