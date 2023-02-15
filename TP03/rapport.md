@@ -33,7 +33,17 @@ Voici la liste des commandes effectuées par l'attaquant :
   ./zip2john ../../Documents/bosch_cyber_tools.zip > bosch_cyber_tools.hash
   
  Puis john the ripper pour tenter de bruteforcer le mot de passe de l'archive :
- john bosch_cyber_tools.hash
+john --wordlist=/usr/share/wordlists/rockyou.txt   bosch_cyber_tools.hash
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:00:03 DONE (2023-02-15 06:23) 0g/s 4612Kp/s 4612Kc/s 4612KC/s !LUVDKR!..*7¡Vamos!
+Session completed. 
+
+ le mot de passe trouvé ne semble pas fonctionner : unzip -P '!LUVDKR!..*7¡Vamos!' bosch_cyber_tools.zip
+ incorrect password
+ 
 
   
   
