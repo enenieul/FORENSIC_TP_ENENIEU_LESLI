@@ -2,8 +2,11 @@ INTRODUCTION
 
 Le site bosch-cyber a été compromis, et que l'attaquant aurait exfiltré des outils secrets très dangereux. Heureusement l'administration a mis le site sous maintenance. nous devons éffectuer une analyse forensique afin de découvrir ce que l'attaquant a exfiltré. 
 
-METHODOLOGIE
+METHODOLOGIE  
+
 Pour faire une analyse forensique des données qui ont été exfiltrées sur le site bosch-cyber, nous allons tout d'abord faire une description des méthodes que nous allons utiliser pour analyser les données et comment nous allons nous en servir. à savoir photorec 
+
+ANANLYSE
 
 Après s'être connecté sur le serveur qui a été attaqué par le hacker, nous avons saisi la commande bash history et nous avons pu constater que l'attaquant a éffectué les actions suivantes:
 
