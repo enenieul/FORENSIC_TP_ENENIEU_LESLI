@@ -1,3 +1,4 @@
+![phish](https://user-images.githubusercontent.com/125278910/232584846-874391a4-bddd-4323-830c-3266fbefb183.PNG)
 L'analyse forensique du TP consiste à analyser un fichier de type image disque (dump d'une clé USB). Pour ce faire, je vais suivre les étapes suivantes :
 - Procéder à l'identification du fichier pour déterminer son type et son format. 
 - Ensuite je vais extraire les métadonnées telle que sa taille, sa date de création, son auteur et sa date de modification. 
